@@ -2,7 +2,8 @@
 
 ![Project Image](todo-app.PNG)
 
-Live Link [Todo App ](https://sahadat-hossain.web.app/)
+[Portfolio ](https://sahadat-hossain.web.app/)
+Live Link [Todo App ](https://peaceful-colden-b4ba13.netlify.app/)
 
 ## Features
 
