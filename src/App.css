@@ -1,38 +1,75 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center;
+  justify-content: center; */
   color: white;
+  width: 500px;
+  margin: 0 auto;
+}
+form.todo-form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+input.todo-input {
+  width: 100%;
+  padding: 12px 8px;
+}
+button.todo-btn {
+  padding: 12px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+select.filter-todo {
+  padding: 12px;
+  margin-left: 10px;
+}
+.single-todo {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  color: #111;
+  margin: 0;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.action-btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+span.complete-btn {
+  background-color: darkgreen;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+span.delete-btn {
+  background-color: darkred;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-todo p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 70%;
+}
+p.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
